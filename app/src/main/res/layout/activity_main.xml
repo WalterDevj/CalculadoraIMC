@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:layout_marginStart="0.1dp"
+    android:background="@color/rich_black"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="serif"
+        android:text="Calculadora IMC"
+        android:textColor="@color/bangladesh_green"
+        android:textSize="34sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.401"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.053" />
+
+    <LinearLayout
+        android:layout_width="420dp"
+        android:layout_height="579dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/textView"
+        app:layout_constraintVertical_bias="0.93">
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/textView_peso"
+                    android:layout_width="148dp"
+                    android:layout_height="wrap_content"
+                    android:text="Peso em Kg:"
+                    android:textAlignment="center"
+                    android:textColor="@color/bangladesh_green"
+                    android:textSize="20sp" />
+
+                <EditText
+                    android:id="@+id/peso_imc"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="#F2F3F4"
+                    android:backgroundTintMode="add"
+                    android:ems="10"
+                    android:inputType="text"
+                    android:textColor="@color/Antilight_flash"
+                    android:textSize="20sp" />
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="wrap_content"
+                android:layout_height="64dp"
+                android:layout_marginBottom="15dp">
+
+                <TextView
+                    android:id="@+id/textView_altura"
+                    android:layout_width="148dp"
+                    android:layout_height="wrap_content"
+                    android:text="Altura:"
+                    android:textAlignment="center"
+                    android:textColor="@color/bangladesh_green"
+                    android:textSize="20sp" />
+
+                <EditText
+                    android:id="@+id/altura_imc"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="#F2F3F4"
+                    android:backgroundTintMode="add"
+                    android:ems="10"
+                    android:inputType="text"
+                    android:textColor="@color/Antilight_flash"
+                    android:textSize="20sp" />
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="125dp">
+
+                <Button
+                    android:id="@+id/button2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="0dp"
+                    android:text="Calcular"
+                    android:textColor="@color/Antilight_flash"
+                    android:textColorLink="#00000F" />
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="125dp">
+
+                <TextView
+                    android:id="@+id/resultado_imc_texto"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:text="Resultado"
+                    android:textAlignment="center"
+                    android:textColor="@color/bangladesh_green"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="125dp">
+
+                <TextView
+                    android:id="@+id/resultado_imc"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:textAlignment="center"
+                    android:textColor="@color/bangladesh_green"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+            </TableRow>
+
+        </TableLayout>
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
